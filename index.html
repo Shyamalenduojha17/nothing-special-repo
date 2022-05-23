@@ -1,9 +1,109 @@
- <html>
-<title>This is my First Project</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<p>welcome to new world</p>
-<p> :) X) you are so funny </p>
-<p> lets do it</p>
+    <div class="header">
+    <ul>
+    <li> <a href="">Home</a></li>
+    <li><a href="About Us.html">About Us</a></li>
+    <li><a href="">Contact Us</a></li>
+    </ul>
+    </div>
+<form>
+<fieldset>
+    <legend>Personal Information </legend>
+    First Name:<input type="text" placeholder="first name" required>
+    Last Name:<input type="text" placeholder="last name" required>
+    <label for="pic">Profile Picture</label>
+    <input type="file" id="pic" required><br>
+    Address:<input type="text" placeholder="address" required>,
+    Post:<input type="text" placeholder="Post" required>,
+    District:<input type="text" placeholder="District" required>,<br>
+    State:<input type="text" placeholder="State" required>,
+    Country:<input type="text" placeholder="Country" required>,
+    Pin Code:<input type="number" placeholder="pincode" required>
+    Email ID:<input type="email" placeholder="email id"required>
+    
+</fieldset>
+<fieldset>
+   <legend>Career Objective</legend>
+    <br>
+    <textarea id="intro" placeholder="career objective" rows="5" cols="40"></textarea>
+</fieldset>
+<fieldset>
+    <legend>Education</legend><br><ul>
+    <li><label>Post Graduation</label></li>
+    College/University name:
+    <br>
+    <input type="text" >
+    <br>
+    Course name:<br>
+    <input type="text">
+    <br>
+    Specialization In:<br>
+    <input type="text"><br>
+    PassOut Year:<br>
+    <input type="number" minlength="4"><br>
+    Percentages Obtain:<br>
+    <input type="number" minlength="2" maxlength="4">
+    <br>
+    <li><label>Graduation</label></li>
+   College/University name:
+    <br>
+    <input type="text" >
+    <br>
+    Course name:<br>
+    <input type="text">
+    <br>
+    Specialization In:<br>
+    <input type="text"><br>
+    PassOut Year:<br>
+    <input type="number" minlength="4"><br>
+    Percentages Obtain:<br>
+    <input type="number" minlength="2" maxlength="4">
+    <br>
+    <li><label>XII / Diploma</label></li>
+    College/School name:
+    <br>
+    <input type="text" >
+    <br>
+    Specialization In:<br>
+    <input type="text"><br>
+    PassOut Year:<br>
+    <input type="number" minlength="4"><br>
+    Percentages Obtain:<br>
+    <input type="number" minlength="2" maxlength="4">
+    <br>
+    <li><label>X/10th</label></li>
+    School name:
+    <br>
+    <input type="text" required >
+    <br>
+    PassOut Year:<br>
+    <input type="number" minlength="4" required><br>
+    Percentages Obtain:<br>
+    <input type="number" minlength="2" maxlength="4" required>
+    <br>
+    </ul>
+</fieldset> 
+<fieldset>
+    <legend>Technical skills</legend>
+    <label>Programming Language:</label><br>
+    <select id="programing language" name="programming language " multiple>
+     <option value="c" >C</option>
+     <option value="c++">C++</option>
+     <option value="java">Java</option>
+     <option value="python">Python</option>
+     <option value="c#">C#</option>
+    </select>
+    <input type="submit" value="Cancel">
+    <input type="submit" value="Add">
+</fieldset>
+<input type="submit" value="submit">
+</form>
+    
 </body>
 </html>
-
